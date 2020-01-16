@@ -7,6 +7,8 @@
  * Author: Real Big Marketing
  * Author URI: https://realbigmarketing.com/
  * Contributors: d4mation
+ * GitHub Plugin URI: disAbility-Connections/accessforall-last-modified-date-shortcode
+ * GitHub Branch: master
  */
 
 // Exit if accessed directly

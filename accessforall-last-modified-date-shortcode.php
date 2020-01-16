@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Access For All - Last Modified Date Shortcode
  * Description: This Shortcode lives in a plugin to ensure that it isn't Theme Specific (Since that would prevent it from working in the App)
- * Version: 0.1.0
+ * Version: 1.0.0
  * Text Domain: accessforall-last-modified-date-shortcode
  * Author: Real Big Marketing
  * Author URI: https://realbigmarketing.com/
@@ -19,19 +19,19 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 	/**
 	 * Main AccessForAll_Last_Modified_Date_Shortcode class
 	 *
-	 * @since	  {{VERSION}}
+	 * @since	  1.0.0
 	 */
 	final class AccessForAll_Last_Modified_Date_Shortcode {
 		
 		/**
 		 * @var			array $plugin_data Holds Plugin Header Info
-		 * @since		{{VERSION}}
+		 * @since		1.0.0
 		 */
 		public $plugin_data;
 		
 		/**
 		 * @var			array $admin_errors Stores all our Admin Errors to fire at once
-		 * @since		{{VERSION}}
+		 * @since		1.0.0
 		 */
 		private $admin_errors;
 
@@ -39,7 +39,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Get active instance
 		 *
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  object self::$instance The one true AccessForAll_Last_Modified_Date_Shortcode
 		 */
 		public static function instance() {
@@ -84,7 +84,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Setup plugin constants
 		 *
 		 * @access	  private
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function setup_constants() {
@@ -123,7 +123,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Internationalization
 		 *
 		 * @access	  private 
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function load_textdomain() {
@@ -160,7 +160,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Include different aspects of the Plugin
 		 * 
 		 * @access	  private
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function require_necessities() {
@@ -171,7 +171,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Show admin errors.
 		 * 
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  HTML
 		 */
 		public function admin_errors() {
@@ -190,7 +190,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
 		 * Register our CSS/JS to use later
 		 * 
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		public function register_scripts() {
@@ -265,7 +265,7 @@ if ( ! class_exists( 'AccessForAll_Last_Modified_Date_Shortcode' ) ) {
  * The main function responsible for returning the one true AccessForAll_Last_Modified_Date_Shortcode
  * instance to functions everywhere
  *
- * @since	  {{VERSION}}
+ * @since	  1.0.0
  * @return	  \AccessForAll_Last_Modified_Date_Shortcode The one true AccessForAll_Last_Modified_Date_Shortcode
  */
 add_action( 'plugins_loaded', 'accessforall_last_modified_date_shortcode_load' );
